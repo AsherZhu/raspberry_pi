@@ -101,7 +101,7 @@ There are a number of commands which can be used to check the hardware and softw
     Serial : 00000000c15e9432
     pi@raspberrypi ~ $
 
-|MODEL AND PI REVISION	|256MB|	HARDWARE REVISION CODE FROM CPUINFO|
+|MODEL AND PI REVISION	|RAM|	HARDWARE REVISION CODE FROM CPUINFO|
 |---|---|---|
 |Model B Revision 1.0	|256MB|	0002|
 |Model B Revision 1.0 + ECN0001 (no fuses, D14 removed)	|256MB|	0003|
