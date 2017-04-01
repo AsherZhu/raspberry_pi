@@ -103,17 +103,14 @@ There are a number of commands which can be used to check the hardware and softw
 
 |MODEL AND PI REVISION	|256MB|	HARDWARE REVISION CODE FROM CPUINFO|
 |---|---|---|
-|Model B |Revision 1.0	|256MB|	0002|
-|Model B |Revision 1.0 + ECN0001 (no fuses, D14 removed)	|256MB|	0003|
-|Model B |Revision 2.0|
-|Mounting holes	|256MB|	0004 0005 0006|
-|Model A|
-|Mounting holes	|256MB|	0007 0008 0009|
-|Model B Revision 2.0|
-|Mounting holes	|512MB|	000d 000e 000f|
+|Model B Revision 1.0	|256MB|	0002|
+|Model B Revision 1.0 + ECN0001 (no fuses, D14 removed)	|256MB|	0003|
+|Model B Revision 2.0<br>Mounting holes	|256MB|	0004<br>0005<br>0006|
+|Model A<br>Mounting holes	|256MB|	0007<br>0008<br>0009|
+|Model B Revision 2.0<br>Mounting holes	|512MB|	000d<br>000e<br>000f|
 |Model B+	|512MB|	0010|
 |Compute Module	|512MB|	0011|
 |Model A+	|256MB|	0012|
-|Pi 2 Model B	|1GB|	a01041 (Sony, UK) a21041 (Embest, China)|
-|PiZero	|512MB|	900092(no camera connector) 900093(camera connector)|
-|Pi 3 Model B	|1GB|	a02082 (Sony, UK) a22082 (Embest, China)|
+|Pi 2 Model B	|1GB|	a01041 (Sony, UK)<br>a21041 (Embest, China)|
+|PiZero	|512MB|	900092(no camera connector)<br>900093(camera connector)|
+|Pi 3 Model B	|1GB|	a02082 (Sony, UK)<br>a22082 (Embest, China)|
