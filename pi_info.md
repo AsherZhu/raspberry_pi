@@ -106,17 +106,11 @@ There are a number of commands which can be used to check the hardware and softw
 |Model B |Revision 1.0	|256MB|	0002|
 |Model B |Revision 1.0 + ECN0001 (no fuses, D14 removed)	|256MB|	0003|
 |Model B |Revision 2.0|
-|Mounting holes	|256MB|	0004|
-|0005
-|0006|
+|Mounting holes	|256MB|	0004 0005 0006|
 |Model A|
-|Mounting holes	|256MB|	0007|
-|0008
-|0009|
+|Mounting holes	|256MB|	0007 0008 0009|
 |Model B Revision 2.0|
-|Mounting holes	|512MB|	000d|
-|000e
-|000f|
+|Mounting holes	|512MB|	000d 000e 000f|
 |Model B+	|512MB|	0010|
 |Compute Module	|512MB|	0011|
 |Model A+	|256MB|	0012|
