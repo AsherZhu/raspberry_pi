@@ -89,3 +89,12 @@ sudo reboot
 3. telnet
 		
 		luit -encoding GB2312 telnet bbs.zixia.net
+
+### MISC
+1. Edit login welcome message
+ - sudo nano /etc/motd
+ - sudo nano /etc/ssh/sshd_config
+   
+   	PrintLastLog=no
+	
+ - sudo /etc/init.d/ssh restart	
