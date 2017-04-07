@@ -92,9 +92,9 @@ sudo reboot
 
 ### MISC
 1. Edit login welcome message
- - sudo nano /etc/motd
- - sudo nano /etc/ssh/sshd_config
-   
-   	PrintLastLog=no
-	
- - sudo /etc/init.d/ssh restart	
+
+		sudo nano /etc/motd
+		
+		sudo nano /etc/ssh/sshd_config
+		PrintLastLog=no
+		sudo /etc/init.d/ssh restart	
