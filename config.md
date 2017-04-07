@@ -13,7 +13,7 @@
 
 ### Wifi configuration
 
-> [有線 或 無線 的DHCP 設定或固定IP設定](https://sites.google.com/site/raspberypishare0918/home/di-yi-ci-qi-dong/1-6-you-xian-huo-wu-xian-dedhcp)
+> [有線或無線的 DHCP 設定或固定 IP 設定](https://sites.google.com/site/raspberypishare0918/home/di-yi-ci-qi-dong/1-6-you-xian-huo-wu-xian-dedhcp)
 
 ```
 sudo /etc/network/interfaces
