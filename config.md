@@ -98,3 +98,17 @@ sudo reboot
 		sudo nano /etc/ssh/sshd_config
 		PrintLastLog=no
 		sudo /etc/init.d/ssh restart	
+		
+2. HDMI with projector
+
+Edit boot/config.txt,uncomment lines.`not worked`
+
+		hdmi_safe= 
+		overscan_left= 
+		overscan_right= 
+		overscan_top= 
+		overscan_bottom= 
+		hdmi_group= 
+		hdmi_mode= 
+		hdmi_drive= 
+		config_hdmi_boost= 
