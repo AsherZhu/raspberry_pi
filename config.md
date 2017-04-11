@@ -101,7 +101,7 @@ sudo reboot
 		
 2. HDMI with projector
 
-Edit boot/config.txt,uncomment lines.`not worked`
+	Edit boot/config.txt,uncomment lines.`not worked`
 
 		hdmi_safe= 
 		overscan_left= 
