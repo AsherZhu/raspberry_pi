@@ -44,19 +44,25 @@ sudo reboot
 
 ### JDK
 
-    sudo apt-get update && sudo apt-get install oracle-java7-jdk
+```
+sudo apt-get update && sudo apt-get install oracle-java7-jdk
+```
 
 ### MySQL
 
-    sudo apt-get update && sudo apt-get upgrade
-    sudo apt-get install mysql-server
+```
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install mysql-server
+```
 
 ### Tomcat
 
-    http://mirror.jax.hugeserver.com/apache/tomcat/tomcat-7/v7.0.76/bin/apache-tomcat-7.0.76.tar.gz
-    tar xvf apache-tomcat-7.0.76.tar.gz
-    cd apache-tomcat-7.0.76/bin
-    ./startup.sh
+```
+http://mirror.jax.hugeserver.com/apache/tomcat/tomcat-7/v7.0.76/bin/apache-tomcat-7.0.76.tar.gz
+tar xvf apache-tomcat-7.0.76.tar.gz
+cd apache-tomcat-7.0.76/bin
+./startup.sh
+```
     
 ### Common command
 1. sudo raspi-config
@@ -67,48 +73,60 @@ sudo reboot
 ### Common Errors
 1. No space left on device
 
-	    sudo raspi-config
-	    Expend Filesystem
-	    Ok
-	    Yes
+```
+sudo raspi-config
+Expend Filesystem
+Ok
+Yes
+df -h
+```
 
-		df -h
 2. Chinese settings
-		
-		sudo raspi-config	
-		「Internationalisation Options」
-		「Change Locale」
-		「zh_CN.UTF-8 UTF-8」
-		「en_US.UTF-8」
 
-		install Chinese fonts
-		sudo apt-get update
-		sudo apt-get install ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
-		sudo apt-get install fcitx
+```
+sudo raspi-config	
+「Internationalisation Options」
+「Change Locale」
+「zh_CN.UTF-8 UTF-8」
+「en_US.UTF-8」
+
+install Chinese fonts
+sudo apt-get update
+sudo apt-get install ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
+sudo apt-get install fcitx
+```
 		
 3. telnet
-		
-		luit -encoding GB2312 telnet bbs.zixia.net
+
+```
+luit -encoding GB2312 telnet bbs.zixia.net
+```
 
 ### MISC
 1. Edit login welcome message
+```
+sudo nano /etc/motd
+```
 
-		sudo nano /etc/motd
-		
-		sudo nano /etc/ssh/sshd_config
-		PrintLastLog=no
-		sudo /etc/init.d/ssh restart	
+```		
+sudo nano /etc/ssh/sshd_config
+PrintLastLog=no
+sudo /etc/init.d/ssh restart	
+```
 		
 2. HDMI with projector
 
 	Edit boot/config.txt,uncomment lines.`not worked`
 
-		hdmi_safe= 
-		overscan_left= 
-		overscan_right= 
-		overscan_top= 
-		overscan_bottom= 
-		hdmi_group= 
-		hdmi_mode= 
-		hdmi_drive= 
-		config_hdmi_boost= 
+	```
+	hdmi_safe= 
+	overscan_left= 
+	overscan_right= 
+	overscan_top= 
+	overscan_bottom= 
+	hdmi_group= 
+	hdmi_mode= 
+	hdmi_drive= 
+	config_hdmi_boost= 
+	```
+	
