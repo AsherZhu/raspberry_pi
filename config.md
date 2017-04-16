@@ -1,6 +1,10 @@
 # Raspberry pi
 
-### Install wheezy
+### Install 
+
+> ? 2015-02-16-raspbian-wheezy.img
+
+> PI3 b+: 2017-04-10-raspbian-jessie.img
 
 > [images download](http://downloads.raspberrypi.org/raspbian/images/)
 
@@ -8,7 +12,7 @@
 2. df -h
 3. diskutil unmount /dev/your_sd_disk
 4. diskutil list
-5. sudo dd bs=4m if=2015-02-16-raspbian-wheezy.img of=/dev/rdisk3
+5. sudo dd bs=4m if=path_to_your_image.img of=/dev/your_sd_disk
 6. diskutil unmountDisk /dev/your_sd_disk
 
 ### Wifi configuration
