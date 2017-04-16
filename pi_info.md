@@ -114,3 +114,25 @@ There are a number of commands which can be used to check the hardware and softw
 |Pi 2 Model B	|1GB|	a01041 (Sony, UK)<br>a21041 (Embest, China)|
 |PiZero	|512MB|	900092(no camera connector)<br>900093(camera connector)|
 |Pi 3 Model B	|1GB|	a02082 (Sony, UK)<br>a22082 (Embest, China)|
+
+### Current Pi Status
+
+```
+vcgencmd measure_temp
+```
+
+```
+for src in arm core h264 isp v3d uart pwm emmc pixel vec hdmi dpi ; do \
+  echo -e "$src:\t$(vcgencmd measure_clock $src)" ; \
+done
+```
+
+```
+for id in core sdram_c sdram_i sdram_p ; do \
+  echo -e "$id:\t$(vcgencmd measure_volts $id)" ; \
+done
+```
+
+```
+vcgencmd get_config int
+```
