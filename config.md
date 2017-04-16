@@ -69,12 +69,44 @@ sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install mysql-server
 ```
 
+```
+sudo nano /etc/mysql/my.cnf
+```
+
+```
+[client]
+default-character-set=UTF8
+
+[mysql]
+default-character-set=UTF8
+
+[mysqld]
+character-set-client-handshake = false #force encoding to uft8
+character-set-server=UTF8
+collation-server=UTF8_general_ci
+
+[mysqld_safe]
+default-character-set=UTF8
+```
+
+```
+sudo service mysql stop
+sudo service mysql start
+```
+
+```
+mysql -u root -p
+
+show variables like 'char%';
+show variables like 'coll%';
+```
+
 ### Tomcat
 
 ```
-http://mirror.jax.hugeserver.com/apache/tomcat/tomcat-7/v7.0.76/bin/apache-tomcat-7.0.76.tar.gz
-tar xvf apache-tomcat-7.0.76.tar.gz
-cd apache-tomcat-7.0.76/bin
+wget https://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-7/v7.0.77/bin/apache-tomcat-7.0.77.tar.gz
+tar xvf apache-tomcat-7.0.77.tar.gz
+cd apache-tomcat-7.0.77/bin
 ./startup.sh
 ```
     
@@ -99,7 +131,7 @@ df -h
 
 ```
 sudo raspi-config	
-「Internationalisation Options」
+「Internationalisation Options」 / 「Localisation Options」
 「Change Locale」
 「zh_CN.UTF-8 UTF-8」
 「en_US.UTF-8」
@@ -113,6 +145,8 @@ sudo apt-get install fcitx
 3. telnet
 
 ```
+sudo apt-get install telnet
+
 luit -encoding GB2312 telnet bbs.zixia.net
 ```
 
