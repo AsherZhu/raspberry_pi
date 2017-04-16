@@ -55,10 +55,11 @@ POWERDOWN_TIME=0
 sudo reboot
 ```
 
-### JDK
+### JDK `jessie already installed JDK8`
 
 ```
-sudo apt-get update && sudo apt-get install oracle-java7-jdk
+sudo apt-get update && sudo apt-upgrade
+sudo apt-get install oracle-java8-jdk
 ```
 
 ### MySQL
