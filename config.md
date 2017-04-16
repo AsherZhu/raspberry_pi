@@ -16,7 +16,10 @@
 > [有線或無線的 DHCP 設定或固定 IP 設定](https://sites.google.com/site/raspberypishare0918/home/di-yi-ci-qi-dong/1-6-you-xian-huo-wu-xian-dedhcp)
 
 ```
-sudo /etc/network/interfaces
+sudo nano /etc/network/interfaces
+```
+
+```
 auto lo eth0
 iface lo inet loopback
 
@@ -34,11 +37,17 @@ wpa-ssid BIG_DATA
 wpa-psk 17021703
 wireless-power off
 iface default inet dhcp
+```
 
+```
 sudo nano /etc/kbd/config 
+```
+
+```
 BLANK_TIME=0 
 POWERDOWN_TIME=0 
-
+```
+```
 sudo reboot
 ```
 
