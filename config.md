@@ -15,6 +15,12 @@
 5. sudo dd bs=4m if=path_to_your_image.img of=/dev/your_sd_disk
 6. diskutil unmountDisk /dev/your_sd_disk
 
+> Open port 22
+
+```
+vi ssh
+```
+
 ### Wifi configuration
 
 > [有線或無線的 DHCP 設定或固定 IP 設定](https://sites.google.com/site/raspberypishare0918/home/di-yi-ci-qi-dong/1-6-you-xian-huo-wu-xian-dedhcp)
